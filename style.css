@@ -1,0 +1,129 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body, html {
+    height: 100%;
+  }
+a{
+    text-decoration: none;
+}
+.notify{
+    background-color: #1e1e1e;
+}
+.notify .title-notify{
+    margin-bottom:0;
+    font-size: 10px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+/*header*/
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+header .name-logo{
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+@media(max-width: 992px){
+    header{
+        position: static;
+    }
+}
+/*banner*/
+.banner{
+    background-image: url('img/banner-1.jpg');
+    background-color: #fff;
+}
+.set-banner{
+    height: 500px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(max-width: 992px){
+    .banner::before{
+        opacity: 0.8;
+}
+}
+/*slick*/
+.slick-slide img{
+    max-width: 100%;
+    padding: 0 15px;
+}
+.slick-dots button{
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    border: none;
+    outline: none;
+    background-color: #888;
+    border-radius: 50%;
+}
+.slick-dots .slick-active button{
+    background-color: #000 !important;
+}
+.slick-dots li {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+.slick-dots {
+    position: absolute;
+    left: 50%;
+}
+/*color*/
+#Copperfield{
+    background-image: url('img/Copperfield.png');
+    background-size: cover;
+}
+#Lavender{
+    background-image: url('img/Lavender.png');
+}
+#Viking{
+    background-image: url('img/Viking.png');
+}
+#Cedar{
+    background-image: url('img/Cedar.png');
+}
+#Mercury{
+    background-image: url('img/Mercury.png');
+}
+#Viking2{
+    background-image: url('img/Viking2.png');
+}
+#Black{
+    background-image: url('img/Black.png');
+}
+#Mandy{
+    background-image: url('img/Mandy.png');
+}
+.title-spring{
+    left:20%
+}
+@media(max-width: 992px){
+    .title-spring{
+        left: 50%;
+    }
+}
+/*footer*/
+footer{
+    background-color: #161616;
+}
+.divider{
+    margin: 20px 0;
+    height: 3px;
+    width: 15%;
+    background-color: #fff;
+}
+footer .social .social-icon{
+    background-color: #222222;;
+    padding: 10px;
+    border-radius: 50%;
+}
+footer .social .social-icon i{
+    padding: 5px;
+}
