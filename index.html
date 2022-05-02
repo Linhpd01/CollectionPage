@@ -6,11 +6,13 @@
         <title>CollectionPage</title>
         <!--Bootstrap CSS-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
         <!--font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <!--My CSS-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
         <!--slick-->
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <!--fontawesome 4.7.0-->
@@ -18,12 +20,12 @@
     </head>
     <body>
         <!--Notification-->
-        <div class="notify py-3 d-none d-lg-block">
+        <div class="notify d-none d-lg-block">
             <div class="container position-relative">
                 <div class=""> 
                     <p class="title-notify text-light text-center text-uppercase">grab it before it's gone... sale's now up to 70% off</p>
                 </div>
-                <div class="close position-absolute top-0 end-0">
+                <div class="close position-absolute">
                     <button type="button" class="btn-close btn-close-white"  aria-label="Close"></button>
                 </div>
             </div>
@@ -84,12 +86,12 @@
             </div>
         </section>
         <!--Product-->
-        <section class="py-5">
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="categories">
-                            <h5 class="border-bottom border-secondary border-1 pb-3 mb-3">CATEGORIES</h5>
+                            <h5 class="border-bottom border-secondary border-1">CATEGORIES</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-angle-right me-2 text-secondary" aria-hidden="true"></i><a class="link-dark" href="#">Men</a></li>
                                 <li><i class="fa fa-angle-right me-2 text-secondary" aria-hidden="true"></i><a class="link-dark" href="#">Women</a></li>
@@ -99,7 +101,7 @@
                             </ul>
                         </div>
                         <div class="shop-by">
-                            <h5 class="border-bottom border-secondary border-1 pb-3 mb-3">SHOP BY</h5>
+                            <h5 class="border-bottom border-secondary border-1">SHOP BY</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-angle-right me-2 text-secondary" aria-hidden="true"></i><a class="link-dark" href="#">None</a></li>
                                 <li><i class="fa fa-angle-right me-2 text-secondary" aria-hidden="true"></i><a class="link-dark" href="#">Popularity</a></li>
@@ -110,7 +112,7 @@
                             </ul>
                         </div>
                         <div class="color">
-                            <h5 class="border-bottom border-secondary border-1 pb-3 mb-3">COLOR</h5>
+                            <h5 class="border-bottom border-secondary border-1">COLOR</h5>
                             <form>
                                 <div class="form-check form-check-inline mx-0">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Copperfield" value="option1" checked>
@@ -147,7 +149,7 @@
                             </form>
                         </div>
                         <div class="size">
-                            <h5 class="border-bottom border-secondary border-1 pb-3 mb-3">SIZE</h5>
+                            <h5 class="border-bottom border-secondary border-1">SIZE</h5>
                             <form class="d-flex flex-wrap gap-2 mb-2">
                                 <input type="radio" class="btn-check" name="options-outlined" id="size-M" checked>
                                 <label class="btn btn-outline-secondary" for="size-M">M</label>
@@ -160,12 +162,12 @@
                             </form>
                         </div>
                         <div class="price range">
-                            <h5 class="border-bottom border-secondary border-1 pb-3 mb-3">PRICE RANGE</h5>
+                            <h5 class="border-bottom border-secondary border-1">PRICE RANGE</h5>
                             <label for="customRange1" class="form-label">Example range</label>
                             <input type="range" class="form-range" min="0" max="5" id="customRange1">
                         </div>
                         <div class="tag">
-                            <h5 class="border-bottom border-secondary border-1 pb-3 mb-3">TAGS</h5>
+                            <h5 class="border-bottom border-secondary border-1">TAGS</h5>
                             <form class="d-flex flex-wrap gap-2">
                                 <input type="checkbox" class="btn-check" id="check-design" checked>
                                 <label class="btn btn-outline-secondary" for="check-design">Design</label>
@@ -184,7 +186,7 @@
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <div class="banner-sale my-5">
+                        <div class="banner-sale">
                             <img src="img/banner-sale.jpg" alt="" style="width:100%;">
                         </div>
                         <div class="product">
@@ -213,7 +215,7 @@
                                 <P class="fw-bold text-center p-4">SWEATPANTS</P>
                             </div>
                         </div>
-                        <div class="product-sale my-5">
+                        <div class="product-sale">
                             <div class="d-flex">
                                 <h5>Bestseller</h5>
                                 <p class="text-end ms-auto"><a href="#">Shop all</a></p>
@@ -245,7 +247,7 @@
                                 </div>
                             </div>
                         </div> 
-                        <div class="product-men my-5">
+                        <div class="product-men">
                             <h5>Men</h5>
                             <div class="row">
                                 <div class="col-6">
@@ -255,41 +257,35 @@
                                 <div class="col-6">
                                     <nav aria-label="Page navigation example">
                                         <ul class="pagination justify-content-end">
-                                          <li class="page-item disabled">
-                                            <a class="page-link">Previous</a>
-                                          </li>
                                           <li class="page-item"><a class="page-link" href="#">1</a></li>
                                           <li class="page-item"><a class="page-link" href="#">2</a></li>
                                           <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                          <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                          </li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4 col-6 p-3">
+                                <div class="col-md-4 col-6">
                                     <img src="img/red-hat.jpg" alt="" style="width:100%;">
                                 </div>
-                                <div class="col-md-4 col-6 p-3">
+                                <div class="col-md-4 col-6">
                                     <img src="img/T-shirt.jpg" alt="" style="width:100%;">
                                 </div>
-                                <div class="col-md-4 col-6 p-3">
+                                <div class="col-md-4 col-6">
                                     <img src="img/bag.jpg" alt="" style="width:100%;">
                                 </div>
-                                <div class="col-md-4 col-6 p-3">
+                                <div class="col-md-4 col-6">
                                     <img src="img/coat1.jpg" alt="" style="width:100%;">
                                 </div>
-                                <div class="col-md-4 col-6 p-3">
+                                <div class="col-md-4 col-6">
                                     <img src="img/beanie.jpg" alt="" style="width:100%;">
                                 </div>
-                                <div class="col-md-4 col-6 p-3">
+                                <div class="col-md-4 col-6">
                                     <img src="img/brown-hat.jpg" alt="" style="width:100%;">
                                 </div>
                             </div>
                         </div>
-                        <nav aria-label="Page navigation ">
+                        <nav aria-label="Page navigation">
                             <ul class="pagination justify-content-center ">
                                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -309,11 +305,11 @@
         <footer>
             <div class="footer-top">
                 <div class="container">
-                    <div class="row py-5">
-                        <div class="col-lg-3 mb-4">
+                    <div class="row">
+                        <div class="col-lg-3">
                             <h5 class="text-uppercase text-light">help & information</h5>
                             <div class="divider my-3"></div>
-                            <div class="nav flex-column gap-2">
+                            <div class="nav flex-column">
                                 <a class="link-secondary text-capitalize" href="#">help</a>
                                 <a class="link-secondary text-capitalize" href="#">track order</a>
                                 <a class="link-secondary text-capitalize" href="#">delivery & returns</a>
@@ -323,7 +319,7 @@
                         <div class="col-lg-3 mb-4">
                             <h5 class="text-uppercase text-light">about us</h5>
                             <div class="divider my-3"></div>
-                            <div class="nav flex-column gap-2">
+                            <div class="nav flex-column">
                                 <a class="link-secondary text-capitalize" href="#">careers at eveland</a>
                                 <a class="link-secondary text-capitalize" href="#">coporate responsibility</a>
                                 <a class="link-secondary text-capitalize" href="#">coporate responsibility</a>
@@ -332,10 +328,10 @@
                                 <a class="link-secondary text-capitalize" href="#">contact us</a>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-4">
+                        <div class="col-lg-3">
                             <h5 class="text-uppercase text-light">categories</h5>
-                            <div class="divider my-3"></div>
-                            <div class="nav flex-column gap-2">
+                            <div class="divider"></div>
+                            <div class="nav flex-column">
                                 <a class="link-secondary text-capitalize" href="#">all clothing</a>
                                 <a class="link-secondary text-capitalize" href="#">jackets</a>
                                 <a class="link-secondary text-capitalize" href="#">jumpsuits</a>
@@ -343,9 +339,9 @@
                                 <a class="link-secondary text-capitalize" href="#">party dresses</a>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-4">
+                        <div class="col-lg-3">
                             <h5 class="text-uppercase text-light">the good stuff in your inbox</h5>
-                            <div class="divider opacity-0 my-3"></div>
+                            <div class="divider opacity-0"></div>
                             <div class="">
                                 <p class="text-muted">New & update from EvelandStore.</p>
                                 <p class="text-muted">No spam, we promise.</p>
@@ -354,8 +350,8 @@
                                 <a class="text-light text-decoration-none" href="#">Sign up<i class="fa fa-angle-right mx-2" aria-hidden="true"></i></a>
                             </div>
                             <div class="border-top border-2 border-primary"></div>
-                            <div class="social py-4">
-                                <div class="d-flex gap-2 list-unstyled">
+                            <div class="social">
+                                <div class="d-flex list-unstyled">
                                     <a class="link-light social-icon" href="#">
                                         <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
                                     </a>
